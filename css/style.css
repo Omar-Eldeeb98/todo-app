@@ -1,0 +1,109 @@
+.title {
+    background-color: rgba(0, 0, 0, 0.86);
+    border-radius: 6px;
+    padding: 12px 16px;
+    font-family: 'Bungee Spice', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#todos_section {
+    min-height: 100vh;
+    background-image: url("../images/bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+
+#todos_section .container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+
+}
+
+#todos_section .container .row {
+    width: 105% !important;
+    margin-bottom: 20px;
+
+}
+
+.todo {
+    transition: all 0.4s;
+}
+
+.todo:hover {
+    width: 95% !important;
+}
+
+.delete_icon:hover {
+    color: red !important;
+}
+
+.complete_icon:hover {
+
+    color: greenyellow;
+}
+
+i {
+    cursor: pointer;
+    background-color: #212529;
+    padding: 6px 8px;
+    border-radius: 6px;
+}
+
+h5 {
+    font-family: 'Bungee Spice', sans-serif;
+}
+
+.todos_container #tasks {
+   
+    overflow: auto;
+}
+
+/*===========================================================================================*/
+.spinner {
+    width: 3em;
+    height: 3em;
+    cursor: not-allowed;
+    border-radius: 50%;
+    border: 2px solid #444;
+    box-shadow: -10px -10px 10px #6359f8, 0px -10px 10px 0px #9c32e2, 10px -10px 10px #f36896, 10px 0 10px #ff0b0b, 10px 10px 10px 0px#ff5500, 0 10px 10px 0px #ff9500, -10px 10px 10px 0px #ffb700;
+    animation: rot55 0.7s linear infinite;
+}
+
+.spinnerin {
+    border: 2px solid #444;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes rot55 {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+@media (max-width: 575.98px) {
+    .todo {
+        width: 100% !important;
+    }
+}
+
+@media (767.98px < width < 991.98px) {
+    .col-md-6 {
+        width: 100% !important;
+    }
+}
